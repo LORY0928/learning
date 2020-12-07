@@ -21,7 +21,6 @@ router.post("/user", (ctx) => {
     i = 3;
   if (!role || role !== "admin") i = 2;
   if (!name || !email) i = 1;
-  console.log("index: ", i);
   ctx.body = resultBody[i];
 });
 
